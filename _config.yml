@@ -37,7 +37,6 @@ disqus_shortname: #gaohaoyang
 # xxxxx字符串
 baidu_tongji_id: b52cbc64a9835bc26fb4701184636474
 google_analytics_id: 'UA-128880495-1'
-ga_domain:auto
 # Build settings
 markdown: kramdown
 
