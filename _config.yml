@@ -20,8 +20,8 @@ github_username:  ng-sec
 email: ccie_biji@163.com
 weibo_username: robin
 zhihu_username: robin
-linkedIn_username: -
-dribbble_username: -
+linkedIn_username: robin
+dribbble_username: robin
 
 description_footer: 来自ng-sec的个人专栏！
 
@@ -35,9 +35,9 @@ disqus_shortname: #gaohaoyang
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-baidu_tongji_id: 
-google_analytics_id:  # google 分析追踪id
-
+baidu_tongji_id: b52cbc64a9835bc26fb4701184636474
+google_analytics_id: 'UA-128880495-1'
+ga_domain:auto
 # Build settings
 markdown: kramdown
 
