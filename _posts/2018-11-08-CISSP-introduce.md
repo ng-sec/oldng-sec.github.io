@@ -1,4 +1,14 @@
-# 介绍
+
+---
+layout: post  
+title:  CISSP认证介绍
+date:   2018年11月09日 22时50分
+categories: 安全认证 
+tags: CISSP 读书笔记 
+author: ng-sec  
+---
+
+# CISSP认证介绍
 > 本文是对CISSP官方学习指南的知识点整理，涉及CBK8个部分，用于知识回顾。
 
 ## 目录
