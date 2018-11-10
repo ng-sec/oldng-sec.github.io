@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: 2018-11-10-CISSP第1部分安全与风险管理
-date: 2018/11/9 14:21:12
+date:  2018/11/9 15:16:21   
 categories: 安全认证 
 tags: CISSP   读书笔记
 author: ng-sec  
@@ -22,5 +22,3 @@ author: ng-sec
 ## 5.法律、道德和合规
 
 ## 6.BCP和DRP需求
-
-test
