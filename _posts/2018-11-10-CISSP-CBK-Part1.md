@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: CISSP第1部分安全与风险管理
+title: CISSP 第1部分安全与风险管理
 date:  2018/11/9 15:16:21   
 categories: 安全认证 
 tags: CISSP   读书笔记
