@@ -53,7 +53,7 @@ tag_dir: tag/
 
 # excerpt
 excerpt_separator: "\n\n\n\n"
-
+exclude: ["vendor"]
 # paginate
 plugins: [jekyll-paginate]
 paginate: 6
