@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: 卸载PaloAlto traps时报错
+title: 卸载PaloAlto traps时报密码错误
 date:  2018/11/12 14:53:01
 categories: cases
 tags: traps PA
