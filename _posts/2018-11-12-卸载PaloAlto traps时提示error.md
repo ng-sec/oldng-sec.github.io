@@ -35,21 +35,37 @@ https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-
  - 备份注册表
 Please backup registry table and manual remove all the registry key per below process,
 - 按照如下修改注册表
-######################
+
+``` shell
+
+
 展开注册表： HKEY_LOCAL_MACHINE > SYSTEM > CURRENTCONTROLSET > services
 
 Scroll down to Traps drivers and services (CyServer, CyveraK, CyveraService, Cyvrfsfd, cyvrmtgn)
 
 展开注册表： HKEY_LOCAL_MACHINE > SYSTEM
-Right click and “Delete” the Cyvera folde
+点击右键删除 Cyvera文件夹
+
 展开注册表：HKEY_LOCAL_MACHINE > SOFTWARE
-Right click and “Delete” the Cyvera folder
-For Traps 3.2 or higher: Also right click and “Delete” the Palo Alto Networks folder
+点击右键删除  Cyvera文件夹
+
+For Traps 3.2 or higher: Also right click and “Delete” the Palo Alto Networks 文件夹
 展开注册表：HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Windows > CurrentVersion > Uninstall
-Right click and “Delete” the registry key that represents “Traps”. To determine which program that each key presents, click the key, and then view the “DisplayName” data value in the details pane on the right.
+点击右键删除  the registry key that represents “Traps”. 
+
+To determine which program that each key presents, click the key, and then view the “DisplayName” data value in the details pane on the right.
+
 展开注册表： HKEY_CLASSES_ROOT > Installer > Products
-Right click and “Delete” the registry key that represents “Traps”. To determine which program that each key presents, click the key, and then view the “ProductName” data value in the details pane on the right.
+点击右键删除  the registry key that represents “Traps”.
+
+To determine which program that each key presents, click the key, and then view the “ProductName” data value in the details pane on the right.
 ######################
+
+
+- 重启电脑
+
+```
+### 使用4.1.4工具清理
 
 Once those registry key removed, reboot unit and run the cleaner tool again to clean up rest of the exe files.
 
