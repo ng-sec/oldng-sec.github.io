@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: PaloAlto无法
+title: 卸载PaloAlto traps是报错
 date:  2018/11/12 14:53:01
 categories: cases
 tags: traps PA
@@ -39,18 +39,18 @@ Please backup registry table and manual remove all the registry key per below pr
 
 ``` shell
 
-
 展开注册表： HKEY_LOCAL_MACHINE > SYSTEM > CURRENTCONTROLSET > services
 
-Scroll down to Traps drivers and services (CyServer, CyveraK, CyveraService, Cyvrfsfd, cyvrmtgn)
+向下滚动找到 Traps drivers and services (CyServer, CyveraK, CyveraService, Cyvrfsfd, cyvrmtgn)
 
-展开注册表： HKEY_LOCAL_MACHINE > SYSTEM
+继续展开注册表： HKEY_LOCAL_MACHINE > SYSTEM
 点击右键删除 Cyvera文件夹
 
 展开注册表：HKEY_LOCAL_MACHINE > SOFTWARE
 点击右键删除  Cyvera文件夹
 
-For Traps 3.2 or higher: Also right click and “Delete” the Palo Alto Networks 文件夹
+3.2以上版本: 还需要删除 Palo Alto Networks 文件夹
+
 展开注册表：HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Windows > CurrentVersion > Uninstall
 点击右键删除  the registry key that represents “Traps”. 
 
