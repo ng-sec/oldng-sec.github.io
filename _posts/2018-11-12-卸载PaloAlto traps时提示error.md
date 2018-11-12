@@ -33,7 +33,8 @@ https://support.microsoft.com/en-us/help/17419/windows-7-advanced-startup-option
 https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode
 
  - 备份注册表
-Please backup registry table and manual remove all the registry key per below process,
+ 
+Please backup registry table and manual remove all the registry key per below process
 - 按照如下修改注册表
 
 ``` shell
