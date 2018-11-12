@@ -27,38 +27,30 @@ author: ng-sec
 
 To remove the traps client if you don't remember the uninstall password,
 
-Please boot the windows 7/10 into safemode,
+WIndows7/10进入安全模式可以参考如下链接：
 
 https://support.microsoft.com/en-us/help/17419/windows-7-advanced-startup-options-safe-mode
 https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode
 
+ - 备份注册表
 Please backup registry table and manual remove all the registry key per below process,
-
+- 按照如下修改注册表
 ######################
-From the drop-down menu expand HKEY_LOCAL_MACHINE > SYSTEM > CURRENTCONTROLSET > services
+展开注册表： HKEY_LOCAL_MACHINE > SYSTEM > CURRENTCONTROLSET > services
+
 Scroll down to Traps drivers and services (CyServer, CyveraK, CyveraService, Cyvrfsfd, cyvrmtgn)
-From the drop-down menu expand HKEY_LOCAL_MACHINE > SYSTEM
+
+展开注册表： HKEY_LOCAL_MACHINE > SYSTEM
 Right click and “Delete” the Cyvera folde
-From the drop-down menu expand HKEY_LOCAL_MACHINE > SOFTWARE
+展开注册表：HKEY_LOCAL_MACHINE > SOFTWARE
 Right click and “Delete” the Cyvera folder
 For Traps 3.2 or higher: Also right click and “Delete” the Palo Alto Networks folder
-From the drop-down menu expand HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Windows > CurrentVersion > Uninstall
+展开注册表：HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Windows > CurrentVersion > Uninstall
 Right click and “Delete” the registry key that represents “Traps”. To determine which program that each key presents, click the key, and then view the “DisplayName” data value in the details pane on the right.
-From the drop-down menu expand HKEY_CLASSES_ROOT > Installer > Products
+展开注册表： HKEY_CLASSES_ROOT > Installer > Products
 Right click and “Delete” the registry key that represents “Traps”. To determine which program that each key presents, click the key, and then view the “ProductName” data value in the details pane on the right.
 ######################
 
 Once those registry key removed, reboot unit and run the cleaner tool again to clean up rest of the exe files.
 
 I attached the 4.1.4 traps cleaner to the case, please download it.
-
-Thank you and Best regards,
-
-He Qiang | Technical Support Engineer
-Shift Time: 8:00 AM – 5:00 PM SGT (GMT +8), Monday – Friday
-Support Contact Numbers
-US: (866) 898-9087, Outside the US 1-408-738-7799
-Amsterdam: 31-20-808-4600, Singapore: 65-31585600
-Japan: 0120184025 Support (Toll Free from Japan only)
-Australia: 1800002378 (Toll Free from Australia only)
-https://support.paloaltonetworks.com/
