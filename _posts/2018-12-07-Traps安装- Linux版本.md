@@ -19,4 +19,25 @@ author: ng-sec
 ## 2.1 解压安装Traps
  
 
+``` shell?linenums
+# 创建目录 /tmp/traps
+sudo mkdir /tmp/traps
+# 将traps安装包copy到刚刚创建的目录
+cp  /tmp/traps
+
+# 解压/tmp/traps
+
+
+```
+
 ## 2.2 查看
+
+
+## 2.3 卸载Traps
+
+``` shell?linenums
+# 
+cd /opt/traps/scripts/
+```
+
+
