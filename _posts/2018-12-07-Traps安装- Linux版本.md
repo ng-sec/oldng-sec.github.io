@@ -12,4 +12,11 @@ author: ng-sec
 
 > 本文主要介绍如何在LInux安装Traps客户端
 
-# 1. 
+# 1. Traps 生成Linux
+
+
+# 2. Linux 安装
+## 2.1 解压安装Traps
+ 
+
+## 2.2 查看
