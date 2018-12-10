@@ -12,11 +12,13 @@ author: ng-sec
 
 > 本文主要介绍如何在LInux安装Traps客户端
 
-# 1. 生成Linux
+# 1. 生成Linux安装包
 - 选择Settings>Agent>Installation Package,点击“三条杠”，点击Generate Package
 ![enter description here](http://800wifi.com/ng-sec/1544418138635.png)
 - 选择Package,点击Generate
 ![enter description here](http://800wifi.com/ng-sec/1544422264169.png)
+- 下载生成的安装包
+![enter description here](http://800wifi.com/ng-sec/1544424713199.png)
 # 2. Linux 下安装traps
 
 ## 2.1 导入根证书
@@ -27,7 +29,7 @@ author: ng-sec
 sudo cp Root.crt /usr/local/share/ca-certificates/Root.crt 
 ```
 - 将证书格式更改为 crt
-> 导入证书时，要求格式为crt，如果是其他格式，请参考以下来转换格式
+> 导入证书时，要求格式为crt，如果证书是其他格式，请参考以下进行格式的转换
 
  - 更改pfx格式为crt
 ``` shell?linenums
@@ -39,15 +41,13 @@ openssl pkcs12 -in Root.pfx -nokeys -out Root.crt -nodes
 openssl x509 -inform DER -in Root.cer -out Root.crt 
 ```
 
-
-# 2）更新根证书
 ## 2.2 解压安装Traps
  
 ``` shell?linenums
 # 1）创建目录 /tmp/traps
 sudo mkdir /tmp/traps
 # 2）将traps安装包copy到刚刚创建的目录
-cp  /tmp/traps
+cp ~/Donwload/Traps_Linux_installer_4.2.1.701.tar.gz  /tmp/traps
 # 3) 解压/tmp/traps,
 tar xvzf Traps_Linux_installer_4.2.1.701.tar.gz
 # 4) 执行安装脚本
@@ -56,16 +56,23 @@ sudo ./traps-installer.sh
 sudo cd/opt/traps/bin
 sudo ./cytool runtime query 
 ```
+## 2.2 cytools工具使用
+``` shell?linenums
+# 1）查看traps状态
+sudo mkdir /tmp/traps
+# 2）关闭traps
+./cytools runtime stop all
+# 3) 启动traps服务
+./cytools runtime start all
 
-
-## 2.2 查看
-
+```
 
 ## 2.3 卸载Traps
 
 ``` shell?linenums
-# 
-cd /opt/traps/scripts/
+sudo cd /opt/traps/scripts/
+sudo ./uninstall.sh
+This operation will uninstall Traps, are you sure? [y/N]: y
 ```
 
 
