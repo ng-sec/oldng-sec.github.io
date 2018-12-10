@@ -13,9 +13,10 @@ author: ng-sec
 > 本文主要介绍如何在LInux安装Traps客户端
 
 # 1. 生成Linux
-选择Settings>Agent>Installation Package,点击“三条杠”，选择Generate Package
+- 选择Settings>Agent>Installation Package,点击“三条杠”，点击Generate Package
 ![enter description here](http://800wifi.com/ng-sec/1544418138635.png)
-
+- 选择Package,点击Generate
+![enter description here](http://800wifi.com/ng-sec/1544422264169.png)
 # 2. Linux 下安装traps
 ## 2.1 解压安装Traps
  
