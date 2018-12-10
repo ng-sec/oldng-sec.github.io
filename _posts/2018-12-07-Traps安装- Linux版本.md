@@ -63,7 +63,6 @@ sudo ./cytool runtime query
 # 2）关闭traps服务
 ./cytools runtime stop all
 ```
-
 ## 2.3 卸载Traps
 
 ``` shell?linenums
