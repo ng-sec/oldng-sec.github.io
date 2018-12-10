@@ -58,13 +58,10 @@ sudo ./cytool runtime query
 ```
 ## 2.2 cytools工具使用
 ``` shell?linenums
-# 1）查看traps状态
-sudo mkdir /tmp/traps
+## 1) 启动traps服务
+./cytools runtime start all
 # 2）关闭traps
 ./cytools runtime stop all
-# 3) 启动traps服务
-./cytools runtime start all
-
 ```
 
 ## 2.3 卸载Traps
