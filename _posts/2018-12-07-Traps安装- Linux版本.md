@@ -15,6 +15,7 @@ author: ng-sec
 # 1. 生成Linux安装包
 - 选择Settings>Agent>Installation Package,点击“三条杠”，点击Generate Package
 ![enter description here](http://800wifi.com/ng-sec/1544418138635.png)
+
 - 选择Package,点击Generate
 
 ![enter description here](http://800wifi.com/ng-sec/1544422264169.png)
