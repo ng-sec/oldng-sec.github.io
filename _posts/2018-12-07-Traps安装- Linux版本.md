@@ -18,7 +18,19 @@ author: ng-sec
 - 选择Package,点击Generate
 ![enter description here](http://800wifi.com/ng-sec/1544422264169.png)
 # 2. Linux 下安装traps
-## 2.1 解压安装Traps
+
+## 2.1 导入根证书
+
+- 导入根证书到本地CA证书目录下
+``` shell?linenums
+# 1）将根证书拷贝到CA证书目录下
+sudo cp Root.crt /usr/local/share/ca-certificates/Root.crt 
+```
+- 如果需要
+
+
+# 2）更新根证书
+## 2.2 解压安装Traps
  
 ``` shell?linenums
 # 1）创建目录 /tmp/traps
@@ -33,18 +45,8 @@ sudo ./traps-installer.sh
 sudo cd/opt/traps/bin
 sudo ./cytool runtime query 
 ```
-## 2.2 导入根证书
 
-``` shell?linenums
-# 1）创建目录 /tmp/traps
-sudo mkdir /tmp/traps
-# 2）将traps安装包copy到刚刚创建的目录
-cp  /tmp/traps
-# 3) 解压/tmp/traps,
-tar xvzf Traps_Linux_installer_4.2.1.701.tar.gz
-# 4) 执行安装脚本
-sudo ./traps-installer.sh
-```
+
 ## 2.2 查看
 
 
