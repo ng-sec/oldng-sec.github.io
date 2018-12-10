@@ -60,7 +60,7 @@ sudo ./cytool runtime query
 ``` shell?linenums
 ## 1) 启动traps服务
 ./cytools runtime start all
-# 2）关闭traps
+# 2）关闭traps服务
 ./cytools runtime stop all
 ```
 
