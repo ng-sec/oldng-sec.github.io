@@ -29,11 +29,22 @@ cp  /tmp/traps
 tar xvzf Traps_Linux_installer_4.2.1.701.tar.gz
 # 4) 执行安装脚本
 sudo ./traps-installer.sh
-
-
+# 5) 查看traps服务状态
+sudo cd/opt/traps/bin
+sudo ./cytool runtime query 
 ```
 ## 2.2 导入根证书
 
+``` shell?linenums
+# 1）创建目录 /tmp/traps
+sudo mkdir /tmp/traps
+# 2）将traps安装包copy到刚刚创建的目录
+cp  /tmp/traps
+# 3) 解压/tmp/traps,
+tar xvzf Traps_Linux_installer_4.2.1.701.tar.gz
+# 4) 执行安装脚本
+sudo ./traps-installer.sh
+```
 ## 2.2 查看
 
 
