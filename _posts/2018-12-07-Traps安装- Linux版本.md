@@ -19,6 +19,7 @@ author: ng-sec
 ![enter description here](http://800wifi.com/ng-sec/1544422264169.png)
 - 下载生成的安装包
 ![enter description here](http://800wifi.com/ng-sec/1544424713199.png)
+
 # 2. Linux 下安装traps
 
 ## 2.1 导入根证书
@@ -33,7 +34,7 @@ sudo update-ca-certificates
  - 将证书格式更改为 crt
 > 导入证书时，要求格式为crt，如果证书是其他格式，请参考以下进行格式的转换
     
-  * 更改pfx格式为crt
+  - 更改pfx格式为crt
  ``` shell?linenums
 openssl pkcs12 -in Root.pfx -nokeys -out Root.crt -nodes  
 ```
