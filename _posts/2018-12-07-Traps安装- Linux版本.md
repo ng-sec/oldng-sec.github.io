@@ -26,7 +26,18 @@ author: ng-sec
 # 1）将根证书拷贝到CA证书目录下
 sudo cp Root.crt /usr/local/share/ca-certificates/Root.crt 
 ```
-- 如果需要
+- 将证书格式更改为 crt
+> 导入证书时，要求格式为crt，如果是其他格式，请参考以下来转换格式
+
+ - 更改pfx格式为crt
+``` shell?linenums
+openssl pkcs12 -in Root.pfx -nokeys -out Root.crt -nodes  
+```
+- 更改DER格式为crt
+ 
+``` shell?linenums
+openssl x509 -inform DER -in Root.cer -out Root.crt 
+```
 
 
 # 2）更新根证书
