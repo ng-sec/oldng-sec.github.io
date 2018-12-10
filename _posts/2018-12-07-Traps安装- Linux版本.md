@@ -30,20 +30,18 @@ sudo cp Root.crt /usr/local/share/ca-certificates/Root.crt
 # 2) 更新证书
 sudo update-ca-certificates 
 ```
-
-- 将证书格式更改为 crt
+ - 将证书格式更改为 crt
 > 导入证书时，要求格式为crt，如果证书是其他格式，请参考以下进行格式的转换
-
- - 更改pfx格式为crt
-``` shell?linenums
+    
+  * 更改pfx格式为crt
+ ``` shell?linenums
 openssl pkcs12 -in Root.pfx -nokeys -out Root.crt -nodes  
 ```
-- 更改DER格式为crt
+ - 更改DER格式为crt
  
 ``` shell?linenums
 openssl x509 -inform DER -in Root.cer -out Root.crt 
 ```
-
 ## 2.2 解压安装Traps
  
 ``` shell?linenums
