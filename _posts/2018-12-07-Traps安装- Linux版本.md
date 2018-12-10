@@ -25,8 +25,9 @@ author: ng-sec
 sudo mkdir /tmp/traps
 # 2）将traps安装包copy到刚刚创建的目录
 cp  /tmp/traps
-
-# 解压/tmp/traps
+# 3) 解压/tmp/traps
+tar xvzf Traps_Linux_installer_4.2.1.701.tar.gz
+./
 
 
 ```
