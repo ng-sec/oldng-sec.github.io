@@ -27,7 +27,10 @@ author: ng-sec
 ``` shell?linenums
 # 1）将根证书拷贝到CA证书目录下
 sudo cp Root.crt /usr/local/share/ca-certificates/Root.crt 
+# 2) 更新证书
+sudo update-ca-certificates 
 ```
+
 - 将证书格式更改为 crt
 > 导入证书时，要求格式为crt，如果证书是其他格式，请参考以下进行格式的转换
 
