@@ -61,6 +61,7 @@ output.elasticsearch:
 ```
 
 - 2) 编辑/etc/metricbeat/modules.d/system.yml,如下图所示
+
 ![enter description here](http://800wifi.com/ng-sec/1546412998374.png)
 
 - 3) 启动metricbeat服务
