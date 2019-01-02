@@ -13,6 +13,10 @@ author: ng-sec
 ## 1.MetricBeat介绍
 
 ## 2.MetricBeat下载
+> 由于我的计算机是Ubuntu18.04,所以选择
+
+[MetricBeat下载链接](https://www.elastic.co/downloads/past-releases)
+![enter description here](http://800wifi.com/ng-sec/1546410876155.png)
 
 ## 3.MetricBeat安装
 
