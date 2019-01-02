@@ -81,7 +81,7 @@ output.elasticsearch:
 
 ```
 
-## 5.Kibana上查看metricbeat状态
+## 6.Kibana上查看metricbeat状态
 
 > 初次配置metricbeat后,kibana会导入默认模板.
 - 选择Dashboard,打开[Metricbeat System] Overview
