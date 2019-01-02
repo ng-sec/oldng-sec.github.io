@@ -40,7 +40,8 @@ ureadahead will be reprofiled on next reboot
 
 ```
 
-## 4.MetricBeat配置和启动
+## 5.MetricBeat配置和启动
+
 - 1) 编辑配置脚本 /etc/metricbeat/metricbeat
 
 ``` ruby?linenums
