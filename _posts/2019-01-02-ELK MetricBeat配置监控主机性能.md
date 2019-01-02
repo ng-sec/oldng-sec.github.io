@@ -51,7 +51,7 @@ setup.template.overwrite: false
 ## 设置kibana的地址
 setup.kibana:
   host: "192.168.80.161:5601"
-## 设置es的地址和协议,我这里有两台:
+## 设置es的地址和协议,我这里有两台:分别是192.168.80.161和192.168.80.162
 output.elasticsearch:
   # Array of hosts to connect to.
   hosts: ["192.168.80.161:9200","192.168.80.162:9200"]
