@@ -93,6 +93,7 @@ output.elasticsearch:
  ![enter description here](http://800wifi.com/ng-sec/1546413710565.png)
  
 - 查看仪表盘
+>下列图表展示了我的电脑的CPU,内存使用率,进程数,以及每个进程分别占比.
 
 ![enter description here](http://800wifi.com/ng-sec/1546415406562.png)
 
