@@ -79,3 +79,15 @@ output.elasticsearch:
 1月 02 15:17:22 robin-ubuntu systemd[1]: Started Metricbeat is a lightweight shipper for metrics..
 
 ```
+
+## 5.Kibana上查看metricbeat状态
+
+> 初次配置metricbeat后,kibana会导入默认模板.
+- 选择Dashboard,打开[Metricbeat System] Overview
+ ![enter description here](http://800wifi.com/ng-sec/1546413710565.png)
+ 
+- 查看仪表盘
+
+![enter description here](http://800wifi.com/ng-sec/1546415406562.png)
+
+![enter description here](http://800wifi.com/ng-sec/1546415435558.png)
