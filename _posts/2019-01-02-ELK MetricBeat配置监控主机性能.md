@@ -84,6 +84,7 @@ output.elasticsearch:
 
 > 初次配置metricbeat后,kibana会导入默认模板.
 - 选择Dashboard,打开[Metricbeat System] Overview
+
  ![enter description here](http://800wifi.com/ng-sec/1546413710565.png)
  
 - 查看仪表盘
