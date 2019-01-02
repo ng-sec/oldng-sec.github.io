@@ -65,7 +65,7 @@ output.elasticsearch:
 - 3) 启动metricbeat服务
 
 ``` ruby?linenums
-#sudo systemctl statart metricbeat 
+#sudo systemctl start metricbeat 
 #sudo systemctl status metricbeat 
 ● metricbeat.service - Metricbeat is a lightweight shipper for metrics.
    Loaded: loaded (/lib/systemd/system/metricbeat.service; disabled; vendor preset: enabled)
