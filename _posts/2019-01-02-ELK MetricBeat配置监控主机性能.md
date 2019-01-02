@@ -40,7 +40,7 @@ ureadahead will be reprofiled on next reboot
 
 ```
 
-## 4.MetricBeat配置
+## 4.MetricBeat配置和启动
 - 1) 编辑配置脚本 /etc/metricbeat/metricbeat
 
 ``` ruby?linenums
@@ -59,5 +59,23 @@ output.elasticsearch:
 
 ```
 
-- 2) 编辑/etc/metricbeat/modules.d/system.yml
+- 2) 编辑/etc/metricbeat/modules.d/system.yml,如下图所示
 ![enter description here](http://800wifi.com/ng-sec/1546412998374.png)
+
+- 3) 启动metricbeat服务
+
+``` ruby?linenums
+#sudo systemctl statart metricbeat 
+#sudo systemctl status metricbeat 
+● metricbeat.service - Metricbeat is a lightweight shipper for metrics.
+   Loaded: loaded (/lib/systemd/system/metricbeat.service; disabled; vendor preset: enabled)
+   Active: active (running) since Wed 2019-01-02 15:17:22 CST; 4s ago
+     Docs: https://www.elastic.co/products/beats/metricbeat
+ Main PID: 26602 (metricbeat)
+    Tasks: 13 (limit: 4915)
+   CGroup: /system.slice/metricbeat.service
+           └─26602 /usr/share/metricbeat/bin/metricbeat -c /etc/metricbeat/metricbeat.yml -path.home /usr/share/metricbe
+
+1月 02 15:17:22 robin-ubuntu systemd[1]: Started Metricbeat is a lightweight shipper for metrics..
+
+```
