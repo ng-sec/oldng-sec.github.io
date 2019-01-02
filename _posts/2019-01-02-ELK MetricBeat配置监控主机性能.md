@@ -16,6 +16,8 @@ Metricbeat是一个服务器监视代理程序，它定期从服务器上运行�
 Metricbeat通过从运行在服务器上的系统和服务收集指标来帮助你监视服务器。
 有关支持的服务的完整列表，请参阅Modules。Metricbeat可以将收集到的指标直接插入Elasticsearch或将其发送到Logstash、Redis或Kafka。
 [参考链接](https://book.gitlore.com/operatesystem/ELKStack%E4%B8%AD%E6%96%87%E6%8C%87%E5%8D%97/beats/metric.html)
+
+ <!-- more -->
 ## 2. 需求说明
 需要通过MetricBeat来监控CPU/内存/IO的使用情况,同时可以查看Ubuntu上的进程使用情况.
 ## 3.MetricBeat下载
