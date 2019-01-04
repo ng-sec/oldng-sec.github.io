@@ -117,3 +117,4 @@ node.name: elasticsearch_node_001
 ``` java?linenums
 gateway.recover_after_nodes: 10
 ```
+此外，配置每个群集中的节点数以及在Elasticsearch中启动它们所需的时间量非常重要：
