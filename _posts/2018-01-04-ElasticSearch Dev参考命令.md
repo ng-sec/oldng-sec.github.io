@@ -18,3 +18,4 @@ author: ng-sec
 GET /_cluster/health?pretty
 ```
 ![查询结果](http://800wifi.com/ng-sec/1546568677141.png)
+ceshi
