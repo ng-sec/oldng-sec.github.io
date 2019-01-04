@@ -118,3 +118,10 @@ node.name: elasticsearch_node_001
 gateway.recover_after_nodes: 10
 ```
 此外，配置每个群集中的节点数以及在Elasticsearch中启动它们所需的时间量非常重要：
+``` java?linenums
+gateway.expected_nodes: 10
+gateway.recover_after_time: 5m
+```
+通过适当的配置，可以在几秒钟内完成需要数小时或数天才能完成的恢复。此外，minimum_master_nodes对于群集稳定性非常重要。它们有助于防止分裂大脑，这是在一个群集中存在两个主节点，并可能导致数据丢失。
+
+此设置的建议值为（N / 2）+ 1 - 其中N是符合主节点的节点数。有了这个，如果你有10个可以保存数据并成为主数据的常规节点，那么该值将是6。如果您有三个专用主节点和1,000个数据节点，则该值为两个（仅计算潜在主节点）：
