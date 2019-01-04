@@ -102,3 +102,6 @@ Elasticsearch“terms”字段根据您的数据构建Bucket，但无法预测�
 默认情况下，Elasticsearch启动的第一个集群称为elasticsearch。如果您不确定如何更改配置，最好坚持默认配置。但是，最好重命名生产群集以防止不需要的节点加入群集。
 
 以下是您可能希望重命名群集和节点的示例：
+cluster.name: elasticsearch_production
+
+node.name: elasticsearch_node_001
