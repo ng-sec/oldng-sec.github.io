@@ -103,7 +103,7 @@ Elasticsearch“terms”字段根据您的数据构建Bucket，但无法预测�
 
 以下是您可能希望重命名群集和节点的示例：
 
-``` javascript?linenums
+``` java?linenums
 cluster.name: elasticsearch_production
 
 node.name: elasticsearch_node_001
