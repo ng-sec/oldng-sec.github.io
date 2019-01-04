@@ -25,7 +25,16 @@ Elasticsearch是开源软件索引，并将信息存储在基于Lucene搜索引�
 
 ``` json?linenums
 {
+“action”: “Some action”,
+“payload”: “2016-01-20”
+}
+```
+ElasticSearch 将会标记"payload"字段为"date"
+假设你的文档如下所示:
+``` json?linenums
+{
 “action”: “Some action 1”,
 “payload”: “USER_LOCKED”
 }
 ```
+那么在这里"payload"并不是一个"date",所以此时由于错误的将payload字段标记为"date"类型,会出现一条错误消息,
