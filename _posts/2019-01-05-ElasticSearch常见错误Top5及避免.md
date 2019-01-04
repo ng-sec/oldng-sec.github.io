@@ -129,7 +129,7 @@ gateway.recover_after_time: 5m
 discovery.zen.minimum_master_nodes: 2
 ```
 4.Capacity Provisioning (容量分配)
-供应可以帮助装备和优化Elasticsearch的运行性能。它要求Elasticsearch的设计应使节点保持正常运行，防止内存失控，并防止意外操作关闭节点。
+分配可以帮助装备和优化Elasticsearch的运行性能。它要求Elasticsearch的设计应使节点保持正常运行，防止内存失控，并防止意外操作关闭节点。
 
 “我需要多少空间？”是用户经常问自己的问题。遗憾的是，没有固定的公式，但可以采取某些步骤来协助规划资源。
 
